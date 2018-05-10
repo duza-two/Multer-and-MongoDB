@@ -1,0 +1,15 @@
+/*Image container set below*/
+#myImg {
+  height: 500px;
+  width: 441px;
+}
+/*Image being adjusted to above container*/
+#myImg img {
+  height: auto;
+  width: 100%;
+}
+
+.my-flex-container {
+  height: 400px;
+  margin-bottom: 20px;
+}

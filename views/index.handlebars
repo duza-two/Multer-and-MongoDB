@@ -1,0 +1,22 @@
+<p class="h1 text-center">File Upload</p>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+<div class="container">
+{{#if msg}}
+  <div class="alert alert-info">{{msg}}</div>
+{{/if}}
+<div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFile" name="Images">
+  <label class="custom-file-label" for="customFile">Choose file</label>
+</div>
+<button class="btn btn-primary" type="submit">Submit</button>
+</div>
+</form>
+<div class="container">
+  <div class="row mb-2">
+  {{#each image}}
+      <div id="myImg" class="col-4">
+        <img src="/uploads/{{this.filename}}">
+      </div>
+    {{/each}}
+  </div>
+</div>
